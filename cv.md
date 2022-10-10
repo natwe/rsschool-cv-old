@@ -63,6 +63,8 @@ In the user part for the project Blockchain + IoT (Python, Flask):
 
 - **[08/2020 – 05/2022]** [Nazarbayev University](https://nu.edu.kz/)
   - Master of Science in Computer Science
+- **[12/2021]** [Authorized by University at Buffalo, The State University of New York and offered through Coursera](http://coursera.org/verify/KXEYPFZ3CMQ3)
+  - Online non-credit course: Blockchain Basics
 - **[09/2006 – 05/2010]** [Innovative University of Eurasia](https://www.ineu.kz/en/)
   - Bachelor of Science in Information Systems
   
