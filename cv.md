@@ -65,6 +65,8 @@ In the user part for the project Blockchain + IoT (Python, Flask):
   - Master of Science in Computer Science
 - **[12/2021]** [Authorized by University at Buffalo, The State University of New York and offered through Coursera](http://coursera.org/verify/KXEYPFZ3CMQ3)
   - Online non-credit course: Blockchain Basics
+- **[12/2017]** [Netcontrol Oy](http://www.netcontrol.com)
+  - Training: Netcon 3000 Advanced Maintenance
 - **[09/2006 – 05/2010]** [Innovative University of Eurasia](https://www.ineu.kz/en/)
   - Bachelor of Science in Information Systems
   
