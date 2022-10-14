@@ -12,7 +12,7 @@
         <img src="images/MyPhoto.jpg" alt="Photo of Natalya Makarenko" id="pic">
         <h1>Natalya Makarenko</h1>
         <nav id="navig">
-            <ul>                
+            <ul>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#work-experience">Work Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -21,7 +21,7 @@
                 <li><a href="#languages">Languages</a></li>
             </ul>
         </nav>
-        <div id="contact-info">   
+        <div id="contact-info">
             <ul>
                 <li><strong>Asectionress: </strong>Astana, Kazakhstan</li>
                 <li><strong>Email: </strong><a href="mailto:natmkaz@gmail.com">natmkaz@gmail.com</a></li>
@@ -37,23 +37,23 @@
     </header>
     <main>
         <div class="clear"></div>
-            
+
         <h2 id="education">Education</h2>
-        <div>        
+        <div>
             <h3>Nazarbayev University <span><a href="https://nu.edu.kz/">https://nu.edu.kz/</a></span></h3>
             <p class="date">08/2020 – 05/2022</p>
             <p>Master of Science in Computer Science</p><br>
-            
+
             <h3>University at Buffalo, The State University of New York (offered through
                     Coursera) <span><a href="http://coursera.org/verify/KXEYPFZ3CMQ3">http://coursera.org/verify/KXEYPFZ3CMQ3</a></span></h3>
             <p class="date">12/2021</p>
             <p>Online non-credit course: Blockchain Basics</p><br>
-            
+
             <h3>Netcontrol Oy <span><a href="http://www.netcontrol.com">http://www.netcontrol.com</a></span>
             </h3>
             <p class="date">12/2017</p>
             <p>Training: Netcon 3000 Advanced Maintenance</p><br>
-            
+
             <h3>Innovative University of Eurasia <span><a href="https://www.ineu.kz/en/">https://www.ineu.kz/en/</a></span>
             </h3>
             <p class="date">09/2006 – 05/2010</p>
@@ -67,17 +67,17 @@
             <h3>Fuel and Energy complex – KAZAKHSTAN <span><a href="https://www.tek-kaz.kz/en">https://www.tek-kaz.kz/en</a></span></h3>
             <p class="date">02/2020 – 09/2020</p>
             <p>Chief Manager of the Department of Automation and Maintenance of Production and Information Technologies</p><br>
-            
+
             <h3>Benatech LLP</h3>
             <p class="date">07/2016 – 11/2019</p>
             <p>Lead engineer of Automated Control Systems</p><br>
-            
+
             <h3>Kazakhstan Aluminium Smelter JSC (KAS) <span><a href="https://www.erg.kz/en">https://www.erg.kz/en</a></span>
             </h3>
             <p class="date">01/2010 – 07/2016</p>
             <p>Lead engineer of the Telemechanics and Automated Control Systems group</p><br>
         </div>
-            
+
         <div class="clear"></div>
 
         <h2 id="skills">Skills</h2>
@@ -93,7 +93,7 @@
         </div>
 
         <div class="clear"></div>
-            
+
         <h2 id="code-example">Code Example</h2>
         <div>
             <p>In the user part for the project Blockchain + IoT (Python, Flask):</p>
@@ -105,22 +105,22 @@ def index():
         sensoList = request.form.get("sensoList")
         inputLow = request.form.get("inputLow")
         inputHigh = request.form.get("inputHigh")
-                        
+
         if len(inputLow)==0 or len(inputHigh)==0:
             flash('Please enter both thresholds','warning')
             return redirect(request.url)
-                        
+
         if float(inputLow) &gt; float(inputHigh):
             flash('The lower threshold must not be greater than '+
                                 ' the upper threshold!','warning')
             return redirect(request.url)
-                        
-        misectionleware_thresholds_send(sensoList, float(inputLow), 
+
+        misectionleware_thresholds_send(sensoList, float(inputLow),
                                                 float(inputHigh))
-                        
+
         flash('Threshold values have been applied!','success')
         return redirect(request.url)
-                        
+
     return render_template('index.html')
                 </code>
             </pre>
@@ -130,7 +130,7 @@ def index():
 
         <h2 id="projects">Projects</h2>
         <div>
-            <p><a href="https://github.com/rolling-scopes-school/js-fe-course-en/blob/main/tasks/CV(markdown)/CV(HTML+CSS+Markdown).md">Link</a> 
+            <p><a href="https://github.com/rolling-scopes-school/js-fe-course-en/blob/main/tasks/CV(markdown)/CV(HTML+CSS+Markdown).md">Link</a>
                     to the CV task</p><br><br><br>
         </div>
 
@@ -145,7 +145,7 @@ def index():
             </ul>
             <br>
         </div>
-            
+
         <div class="clear"></div>
     </main>
     <footer>
