@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Natalya Makarenko | rsschool-cv</title>
+</head>
+<body>
+    <header>
+        <img src="images/MyPhoto.jpg" alt="Photo of Natalya Makarenko" id="pic">
+        <h1>Natalya Makarenko</h1>
+        <nav id="navig">
+            <ul>                
+                <li><a href="#education">Education</a></li>
+                <li><a href="#work-experience">Work Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#code-example">Code Example</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#languages">Languages</a></li>
+            </ul>
+        </nav>
+        <div id="contact-info">   
+            <ul>
+                <li><strong>Asectionress: </strong>Astana, Kazakhstan</li>
+                <li><strong>Email: </strong><a href="mailto:natmkaz@gmail.com">natmkaz@gmail.com</a></li>
+                <li><strong>Phone (Telegram): </strong><a href="tel:+77077766313">+7 707 77 66 313</a></li>
+            </ul>
+        </div>
+        <div id="about-me">
+            <p>I am a programmer with extensive experience in the industry.<br>
+            I became interested in blockchain technology in my last year of Masters and wrote my master's thesis on this
+            topic - "Document Authentication using Blockchain: Diploma Validation as a Test Case". Frontend is a necessary part of
+            developing DApps, and this is one of the reasons why I am taking this course.</p>
+        </div>
+    </header>
+    <main>
+        <div class="clear"></div>
+            
+        <h2 id="education">Education</h2>
+        <div>        
+            <h3>Nazarbayev University <span><a href="https://nu.edu.kz/">https://nu.edu.kz/</a></span></h3>
+            <p class="date">08/2020 – 05/2022</p>
+            <p>Master of Science in Computer Science</p><br>
+            
+            <h3>University at Buffalo, The State University of New York (offered through
+                    Coursera) <span><a href="http://coursera.org/verify/KXEYPFZ3CMQ3">http://coursera.org/verify/KXEYPFZ3CMQ3</a></span></h3>
+            <p class="date">12/2021</p>
+            <p>Online non-credit course: Blockchain Basics</p><br>
+            
+            <h3>Netcontrol Oy <span><a href="http://www.netcontrol.com">http://www.netcontrol.com</a></span>
+            </h3>
+            <p class="date">12/2017</p>
+            <p>Training: Netcon 3000 Advanced Maintenance</p><br>
+            
+            <h3>Innovative University of Eurasia <span><a href="https://www.ineu.kz/en/">https://www.ineu.kz/en/</a></span>
+            </h3>
+            <p class="date">09/2006 – 05/2010</p>
+            <p>Bachelor of Science in Information Systems</p><br>
+        </div>
+
+        <div class="clear"></div>
+
+        <h2 id="work-experience">Work Experience</h2>
+        <div>
+            <h3>Fuel and Energy complex – KAZAKHSTAN <span><a href="https://www.tek-kaz.kz/en">https://www.tek-kaz.kz/en</a></span></h3>
+            <p class="date">02/2020 – 09/2020</p>
+            <p>Chief Manager of the Department of Automation and Maintenance of Production and Information Technologies</p><br>
+            
+            <h3>Benatech LLP</h3>
+            <p class="date">07/2016 – 11/2019</p>
+            <p>Lead engineer of Automated Control Systems</p><br>
+            
+            <h3>Kazakhstan Aluminium Smelter JSC (KAS) <span><a href="https://www.erg.kz/en">https://www.erg.kz/en</a></span>
+            </h3>
+            <p class="date">01/2010 – 07/2016</p>
+            <p>Lead engineer of the Telemechanics and Automated Control Systems group</p><br>
+        </div>
+            
+        <div class="clear"></div>
+
+        <h2 id="skills">Skills</h2>
+        <div>
+            <ul>
+                <li>Delphi (during undergraduate studies and after)</li>
+                <li>C, Java (while studying for a master's degree)</li>
+                <li>Python (NumPy, Pandas...), Flask</li>
+                <li>Master Degree: Computer Vision, Deep Learning, Algorithmic Trading...</li>
+                <li>Blockchain: Solidity, Web3.js and Web3.py</li>
+                <li>HTML, CSS, JavaScript</li>
+            </ul>
+        </div>
+
+        <div class="clear"></div>
+            
+        <h2 id="code-example">Code Example</h2>
+        <div>
+            <p>In the user part for the project Blockchain + IoT (Python, Flask):</p>
+            <pre>
+                <code>
+@app.route('/', methods=['GET','POST'])
+def index():
+    if request.method == 'POST':
+        sensoList = request.form.get("sensoList")
+        inputLow = request.form.get("inputLow")
+        inputHigh = request.form.get("inputHigh")
+                        
+        if len(inputLow)==0 or len(inputHigh)==0:
+            flash('Please enter both thresholds','warning')
+            return redirect(request.url)
+                        
+        if float(inputLow) > float(inputHigh):
+            flash('The lower threshold must not be greater than '+
+                                ' the upper threshold!','warning')
+            return redirect(request.url)
+                        
+        misectionleware_thresholds_send(sensoList, float(inputLow), 
+                                                float(inputHigh))
+                        
+        flash('Threshold values have been applied!','success')
+        return redirect(request.url)
+                        
+    return render_template('index.html')
+                </code>
+            </pre>
+        </div>
+
+        <div class="clear"></div>
+
+        <h2 id="projects">Projects</h2>
+        <div>
+            <p><a href="https://github.com/rolling-scopes-school/js-fe-course-en/blob/main/tasks/CV(markdown)/CV(HTML+CSS+Markdown).md">Link</a> 
+                    to the CV task</p><br><br><br>
+        </div>
+
+        <div class="clear"></div>
+
+        <h2 id="languages">Languages</h2>
+        <div>
+            <ul>
+                <li><strong>Mother tongue: </strong>Russian</li>
+                <li><strong>Other language(s): </strong>English (IELTS 6.5 in 2019; and then 2 years of study for a Master in
+                        English)</li>
+            </ul>
+            <br>
+        </div>
+            
+        <div class="clear"></div>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="https://github.com/natwe">My GitHub</a></li>
+            <li><strong>October, 2022</strong></li>
+            <li>
+                <a id="rs-logo" href="https://github.com/rolling-scopes-school/js-fe-course-en">
+                <img src="https://rs.school/images/rs_school_js.svg" alt="Rolling Scopes School"></a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
