@@ -25,7 +25,7 @@
             <ul>
                 <li><strong>Asectionress: </strong>Astana, Kazakhstan</li>
                 <li><strong>Email: </strong><a href="mailto:natmkaz@gmail.com">natmkaz@gmail.com</a></li>
-                <li><strong>Phone (Telegram): </strong><a href="tel:+77077766313">+7 707 77 66 313</a></li>
+                <li><strong>Phone (Telegram): </strong><a href="tel:+77077766313">+77077766313</a></li>
             </ul>
         </div>
         <div id="about-me">
@@ -110,7 +110,7 @@ def index():
             flash('Please enter both thresholds','warning')
             return redirect(request.url)
                         
-        if float(inputLow) > float(inputHigh):
+        if float(inputLow) &gt; float(inputHigh):
             flash('The lower threshold must not be greater than '+
                                 ' the upper threshold!','warning')
             return redirect(request.url)
